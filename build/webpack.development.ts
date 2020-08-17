@@ -5,8 +5,9 @@ import { webpackBaseConfig } from "./webpack.base";
 export const webpackDevelopmentConfig: Configuration = {
   mode: "development",
   devServer: {
+    noInfo: true,
     port: 12138,
-    host: "0.0.0.0",
+    host: "localhost",
     open: true,
   },
 };
